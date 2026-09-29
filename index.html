@@ -9,9 +9,10 @@
 <body>
     <header>
         <div class="logo">
-            <img src="/Proyectos/images/logo.png" alt="Monster Hunter Logo">
-            <h1>Monster Hunter Web</h1>
+            <img src="/Proyectos/styles/images/logo_mhs.png" alt="Monster Hunter Logo">
+            
         </div>
+        <h1>Monster Hunter fan Web</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="/Proyectos/pages/bestiario.html">Bestiario</a>
@@ -19,6 +20,17 @@
             <a href="/Proyectos/pages/tarjeta.html">Tarjeta de cazador</a>
         </nav>
     </header>
-    
+    <main class="main-container">
+        <div class="carrusel">
+            <button class="btn-carrusel prev" id="prevBtn">❮</button>
+            <div class="slider">
+                <img src="/Proyectos/styles/images/Fondo1.jpeg" alt="Slider Image 1" class="active">
+                <img src="/Proyectos/styles/images/Fondo4.jpeg" alt="Slider Image 2">
+                <img src="/Proyectos/styles/images/Fondo6.jpeg" alt="Slider Image 3">
+            </div>
+            <button class="btn-carrusel next" id="nextBtn">❯</button>
+        </div>
+    </main>
+    <script src="/Proyectos/js/app.js"></script>
 </body>
 </html>
