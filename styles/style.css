@@ -108,3 +108,38 @@ nav a:hover {
 .next {
     right: 15px;
 }
+/* POSICIONAMIENTO DEL TEXTO DENTRO DEL CARRUSEL */
+.carrusel .content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Lo centra horizontalmente */
+    width: 80%;
+    text-align: center;
+    padding: 15px 25px;
+    z-index: 5; /* Asegura que quede por encima de las imágenes */
+    
+    /* TRUCOS DE LEGIBILIDAD */
+    background: rgba(15, 13, 11, 0.75); /* Fondo oscuro translúcido */
+    border: 1px solid rgba(200, 160, 80, 0.5); /* Borde dorado suave */
+    border-radius: 6px;
+    backdrop-filter: blur(4px); /* Desenfoca ligeramente la imagen de fondo detrás del texto */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* ESTILO DEL TÍTULO */
+.carrusel .content h2 {
+    color: #f5d061; /* Dorado */
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra pesada para destacar */
+}
+
+/* ESTILO DEL PARRAFO */
+.carrusel .content p {
+    color: #f0e6d2; /* Pergamino claro */
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
