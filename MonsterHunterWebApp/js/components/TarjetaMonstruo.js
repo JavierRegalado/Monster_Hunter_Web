@@ -1,4 +1,4 @@
-class TarjetaMonstruo {
+export default class TarjetaMonstruo {
     constructor(monstruo) {
         this.nombre = monstruo.nombre;
         this.especie = monstruo.especie;
