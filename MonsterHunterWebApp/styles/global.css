@@ -1,0 +1,97 @@
+:root {
+    --bg-principal: #12100e;
+    --bg-tarjeta: #1e1b18;
+    --bg-header: rgba(20, 18, 16, 0.95);
+    --bg-tag: #342a20;
+    
+    --color-texto: #e6dac3;
+    --color-texto-secundario: #a89a85;
+    --color-dorado: #d4af37;
+    --color-dorado-brillante: #f39c12;
+    --color-rojo-debilidad: #e74c3c;
+    --color-borde: #6e5430;
+    --color-borde-hover: #b8860b;
+    
+    --fuente-titulo: 'Georgia', 'Times New Roman', serif;
+    --fuente-cuerpo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--color-texto);
+    font-family: var(--fuente-cuerpo);
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 50% 20%, #241c14 0%, #12100e 80%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header y Navegación */
+header {
+    background-color: var(--bg-header);
+    border-bottom: 2px solid var(--color-borde);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+}
+
+header h1 {
+    font-family: var(--fuente-titulo);
+    color: var(--color-dorado);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+header nav a:hover {
+    color: var(--color-dorado-brillante);
+    border-color: var(--color-borde);
+    background-color: var(--bg-tag);
+}
+
+.main-container {
+    height: 100%;
+    width: 90%;
+    margin: 2rem auto;
+    flex-grow: 1;
+}

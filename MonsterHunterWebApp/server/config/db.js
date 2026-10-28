@@ -54,7 +54,7 @@ function poblarDatosIniciales() {
                 'Fuego',
                 'Rayo',
                 'El Rey de los Cielos. Domina el aire y ataca con sus garras envenenadas y potentes llamaradas.',
-                './styles/images/rathalos.jpg'
+                'Proyectos/MonsterHunterWebApp/styles/images/rathalos.png'
             );
 
             stmt.run(
@@ -63,7 +63,7 @@ function poblarDatosIniciales() {
                 'Rayo',
                 'Hielo',
                 'Wyvern envuelto en relámpagos gracias a los Bichos Eléctricos que convoca para cargarse.',
-                './styles/images/zinogre.jpg'
+                'Proyectos/MonsterHunterWebApp/styles/images/zinogre.png'
             );
 
             stmt.finalize(() => {
